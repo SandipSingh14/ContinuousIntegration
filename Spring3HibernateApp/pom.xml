@@ -140,6 +140,24 @@
 					<port>11011</port>
 				</configuration>
 			</plugin>
+			<plugin>
+			    <groupId>com.atlassian.maven.plugins</groupId>
+			        <artifactId>maven-jgitflow-plugin</artifactId>
+			        <version>1.0-alpha21.1</version>
+				        <configuration>
+				            <pushReleases>true</pushReleases>
+				            <keepBranch>false</keepBranch>
+				            <noTag>false</noTag>
+		 	        	       <flowInitContext>
+			                	    <masterBranchName>master</masterBranchName>
+				                    <developBranchName>dev</developBranchName>
+				                    <featureBranchPrefix>feature-</featureBranchPrefix>
+				                    <releaseBranchPrefix>release-</releaseBranchPrefix>
+				                    <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+			        	            <versionTagPrefix>release-</versionTagPrefix>
+			                	</flowInitContext>
+				        </configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<version>1.6-SNAPSHOT</version>
