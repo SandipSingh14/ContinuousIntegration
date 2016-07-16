@@ -1,0 +1,6 @@
+machine:
+  java:
+    version: oraclejdk8
+test:
+  override:
+    - mvn -f EmployeeAutomation/pom.xml site:deploy -Dmaven.test.skip=true
