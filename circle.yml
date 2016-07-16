@@ -8,4 +8,4 @@ test:
 general:
   build_dir: EmployeeAutomation
   artifacts:
-    - "EmployeeAutomation/target/*.jar"
+    - "target/*.jar"
