@@ -3,4 +3,4 @@ machine:
     version: oraclejdk8
 test:
   override:
-    - mvn -f EmployeeAutomation/pom.xml clean test -Dmaven.test.skip=true
+    - mvn -f EmployeeAutomation/pom.xml clean install -Dmaven.test.skip=true
