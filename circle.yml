@@ -3,4 +3,9 @@ machine:
     version: oraclejdk8
 test:
   override:
-    - mvn -f EmployeeAutomation/pom.xml clean package -Dmaven.test.skip=true
+    - mvn clean package -Dmaven.test.skip=true
+
+general:
+  build_dir: EmployeeAutomation
+  artifacts:
+    - "EmployeeAutomation/target/*.jar"
